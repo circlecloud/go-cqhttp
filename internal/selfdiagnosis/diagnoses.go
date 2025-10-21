@@ -13,7 +13,7 @@ func NetworkDiagnosis(c *client.QQClient) {
 	log.Debugf("聊天服务器连接延迟: %vms", qualityInfo.ChatServerLatency)
 	log.Debugf("聊天服务器丢包率: %v%%", qualityInfo.ChatServerPacketLoss*10)
 	// log.Debugf("长消息服务器连接延迟: %vms", qualityInfo.LongMessageServerLatency)
-	//log.Debugf("长消息服务器响应延迟: %vms", qualityInfo.LongMessageServerResponseLatency)
+	// log.Debugf("长消息服务器响应延迟: %vms", qualityInfo.LongMessageServerResponseLatency)
 	log.Debugf("媒体服务器连接延迟: %vms", qualityInfo.SrvServerLatency)
 	log.Debugf("媒体服务器丢包率: %v%%", qualityInfo.SrvServerPacketLoss*10)
 
@@ -43,7 +43,7 @@ func NetworkDiagnosis(c *client.QQClient) {
 	//	}
 	//}
 	//
-	//if qualityInfo.LongMessageServerResponseLatency > 2000 {
+	// if qualityInfo.LongMessageServerResponseLatency > 2000 {
 	//	if qualityInfo.LongMessageServerResponseLatency == 9999 {
 	//		log.Errorf("错误: 长消息服务器响应延迟测试失败, %v 如果您使用的腾讯云服务器, 请修改DNS到114.114.114.114", longMessageServerErrorMessage)
 	//	} else {

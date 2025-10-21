@@ -175,7 +175,7 @@ func toElements(e []message.IMessageElement, source message.Source) (r []msg.Ele
 				{K: "url", V: o.URL},
 			}
 			// switch {
-			//case o.Flash:
+			// case o.Flash:
 			//	data = append(data, pair{K: "type", V: "flash"})
 			//case o.EffectID != 0:
 			//	data = append(data, pair{K: "type", V: "show"})
@@ -198,7 +198,7 @@ func toElements(e []message.IMessageElement, source message.Source) (r []msg.Ele
 		//		Data: data,
 		//	}
 		// TODO DiceElement
-		//case *message.DiceElement:
+		// case *message.DiceElement:
 		//	m = msg.Element{
 		//		Type: "dice",
 		//		Data: pairs{
@@ -360,7 +360,7 @@ func ToMessageContent(e []message.IMessageElement, source message.Source) (r []g
 		//		"type": "image",
 		//		"data": data,
 		//	}
-		//case *message.DiceElement:
+		// case *message.DiceElement:
 		//	m = global.MSG{"type": "dice", "data": global.MSG{"value": o.Value}}
 		//case *message.FingerGuessingElement:
 		//	m = global.MSG{"type": "rps", "data": global.MSG{"value": o.Value}}
@@ -681,11 +681,11 @@ func (bot *CQBot) ConvertElement(spec *onebot.Spec, elem msg.Element, sourceType
 		if err != nil {
 			return nil, err
 		}
-		//if elem.Get("type") == "sticker" {
+		// if elem.Get("type") == "sticker" {
 		//	return &message.AnimatedSticker{ID: int32(id)}, nil
 		//}
 		return message.NewFace(uint32(id)), nil
-	//case "share":
+	// case "share":
 	//	return message.NewUrlShare(elem.Get("url"), elem.Get("title"), elem.Get("content"), elem.Get("image")), nil
 	//case "music":
 	//	id := elem.Get("id")

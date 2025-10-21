@@ -217,7 +217,7 @@ func loginResponseProcessor(res *client.LoginResponse) error {
 		//	res, err = cli.SubmitCaptcha(text, res.CaptchaSign)
 		//	continue
 		// TODO 短信验证码?
-		//case client.SMSNeededError:
+		// case client.SMSNeededError:
 		//	log.Warnf("账号已开启设备锁, 按 Enter 向手机 %v 发送短信验证码.", res.SMSPhone)
 		//	readLine()
 		//	if !cli.RequestSMS() {

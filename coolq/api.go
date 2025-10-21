@@ -1015,7 +1015,7 @@ func (bot *CQBot) CQGetStrangerInfo(userID int64) global.MSG {
 		"sex": func() string {
 			// if info.Sex == 1 {
 			//	return "female"
-			//} else if info.Sex == 0 {
+			// } else if info.Sex == 0 {
 			//	return "male"
 			//}
 			// unknown = 0x2

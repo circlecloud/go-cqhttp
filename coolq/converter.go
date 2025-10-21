@@ -15,7 +15,7 @@ func convertGroupMemberInfo(groupID int64, m *entity.GroupMember) global.MSG {
 	sex := "unknown"
 	// if m.Gender == 1 { // unknown = 0xff
 	//	sex = "female"
-	//} else if m.Gender == 0 {
+	// } else if m.Gender == 0 {
 	//	sex = "male"
 	//}
 	role := "member"
