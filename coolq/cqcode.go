@@ -214,7 +214,7 @@ func toElements(e []message.IMessageElement, source message.Source) (r []msg.Ele
 		//		},
 		//	}
 		// TODO MarketFaceElement
-		//case *message.MarketFaceElement:
+		// case *message.MarketFaceElement:
 		//	m = msg.Element{
 		//		Type: "text",
 		//		Data: pairs{
@@ -364,7 +364,7 @@ func ToMessageContent(e []message.IMessageElement, source message.Source) (r []g
 		//	m = global.MSG{"type": "dice", "data": global.MSG{"value": o.Value}}
 		// case *message.FingerGuessingElement:
 		//	m = global.MSG{"type": "rps", "data": global.MSG{"value": o.Value}}
-		//case *message.MarketFaceElement:
+		// case *message.MarketFaceElement:
 		//	m = global.MSG{"type": "text", "data": global.MSG{"text": o.Name}}
 		//case *message.ServiceElement:
 		//	if isOk := strings.Contains(o.Content, "<?xml"); isOk {
@@ -766,7 +766,7 @@ func (bot *CQBot) ConvertElement(spec *onebot.Spec, elem msg.Element, sourceType
 	//		}, nil
 	//	}
 	//	return nil, errors.New("unsupported music type: " + elem.Get("type"))
-	//case "dice":
+	// case "dice":
 	//	value := elem.Get("value")
 	//	i, _ := strconv.ParseInt(value, 10, 64)
 	//	if i < 0 || i > 6 {
