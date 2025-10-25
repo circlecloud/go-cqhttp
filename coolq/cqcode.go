@@ -177,7 +177,7 @@ func toElements(e []message.IMessageElement, source message.Source) (r []msg.Ele
 			// switch {
 			// case o.Flash:
 			//	data = append(data, pair{K: "type", V: "flash"})
-			//case o.EffectID != 0:
+			// case o.EffectID != 0:
 			//	data = append(data, pair{K: "type", V: "show"})
 			//	data = append(data, pair{K: "id", V: strconv.FormatInt(int64(o.EffectID), 10)})
 			//}
@@ -206,7 +206,7 @@ func toElements(e []message.IMessageElement, source message.Source) (r []msg.Ele
 		//		},
 		//	}
 		// TODO FingerGuessingElement
-		//case *message.FingerGuessingElement:
+		// case *message.FingerGuessingElement:
 		//	m = msg.Element{
 		//		Type: "rps",
 		//		Data: pairs{
@@ -362,7 +362,7 @@ func ToMessageContent(e []message.IMessageElement, source message.Source) (r []g
 		//	}
 		// case *message.DiceElement:
 		//	m = global.MSG{"type": "dice", "data": global.MSG{"value": o.Value}}
-		//case *message.FingerGuessingElement:
+		// case *message.FingerGuessingElement:
 		//	m = global.MSG{"type": "rps", "data": global.MSG{"value": o.Value}}
 		//case *message.MarketFaceElement:
 		//	m = global.MSG{"type": "text", "data": global.MSG{"text": o.Name}}
@@ -687,7 +687,7 @@ func (bot *CQBot) ConvertElement(spec *onebot.Spec, elem msg.Element, sourceType
 		return message.NewFace(uint32(id)), nil
 	// case "share":
 	//	return message.NewUrlShare(elem.Get("url"), elem.Get("title"), elem.Get("content"), elem.Get("image")), nil
-	//case "music":
+	// case "music":
 	//	id := elem.Get("id")
 	//	switch elem.Get("type") {
 	//	case "qq":

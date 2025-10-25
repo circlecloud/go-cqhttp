@@ -229,7 +229,7 @@ func loginResponseProcessor(res *client.LoginResponse) error {
 		//	res, err = cli.SubmitSMS(text)
 		//	continue
 		// TODO 设备锁?
-		//case client.SMSOrVerifyNeededError:
+		// case client.SMSOrVerifyNeededError:
 		//	log.Warnf("账号已开启设备锁，请选择验证方式:")
 		//	log.Warnf("1. 向手机 %v 发送短信验证码", res.SMSPhone)
 		//	log.Warnf("2. 使用手机QQ扫码验证.")
